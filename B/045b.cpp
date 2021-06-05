@@ -1,0 +1,52 @@
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+//定数
+#define INF32 2147483647 //2.147483647×10^{9}:32bit整数のinf
+#define INF64 9223372036854775807 //9.223372036854775807×10^{18}:64bit整数のinf
+#define MOD 1000000007 //問題による
+//イテレーション
+#define REP(i,n) for(ll i=0;i<ll(n);i++)
+#define REPD(i,n) for(ll i=n-1;i>=0;i--)
+#define FOR(i,a,b) for(ll i=a;i<=ll(b);i++)
+#define FORD(i,a,b) for(ll i=a;i>=ll(b);i--)
+#define FORA(i,I) for(const auto& i:I)
+int main() {
+    string a, b, c; cin >> a >> b >> c;
+
+    char r = 'a';
+    int ra = 0; int rb = 0; int rc = 0;
+    while(1){
+        if(r == 'a'){
+            if(a.empty()){
+                cout << 'A' << endl;
+                return 0;
+            }
+            r = a[0];
+            a.erase(a.begin());
+        }
+        if(r == 'b'){
+            if(b.empty()){
+                cout << 'B' << endl;
+                return 0;
+            }
+            r = b[0];
+            b.erase(b.begin());
+        }
+        if(r == 'c'){
+            if(c.empty()){
+                cout << 'C' << endl;
+                return 0;
+            }
+            r = c[0];
+            c.erase(c.begin());
+        }
+
+
+    }
+    //cin >> ;
+
+    //cout << << endl;
+
+    return 0;
+}

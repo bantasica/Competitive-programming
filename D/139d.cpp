@@ -12,9 +12,15 @@ typedef long long ll;
 #define FORD(i,a,b) for(ll i=a;i>=ll(b);i--)
 #define FORA(i,I) for(const auto& i:I)
 int main() {
-    //cin >> ;
-
-    //cout << << endl;
-
+    ll N; cin >> N;
+    ll v = 0; ll w = 0;
+    ll M = 0;
+    if(N % 2 == 1){
+        M =  (N-1)/2 *(1+N-1);
+        cout << M << endl;
+    }else{
+        M = (N-2)/2*(1+N-1)+N/2;
+        cout << M << endl;
+    }
     return 0;
 }

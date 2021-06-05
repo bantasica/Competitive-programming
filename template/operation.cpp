@@ -13,6 +13,7 @@ string str = to_string(num);
 double dou = 4.82;
 int num = int(dou); // >>> 4
 
+
 //文字列から数値へ
 string str = "12";
 int num = str-'0'; // <-'0'を引くことでintへ 
@@ -52,6 +53,11 @@ sort(begin(s), end(s), greater<>());
 string X = s; // >>> "onkida"
 reverse(begin(s), end(s));
 string Y = s; // >>> "adikno"
+
+string str = "samurai,engineer!";
+string substr = str.substr(8);
+//8文字目以降を取り出す。
+// 出力結果 engineer!
 
 
 文字の小文字大文字判定に以下が役に立つ

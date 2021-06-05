@@ -12,9 +12,20 @@ typedef long long ll;
 #define FORD(i,a,b) for(ll i=a;i>=ll(b);i--)
 #define FORA(i,I) for(const auto& i:I)
 int main() {
-    //cin >> ;
+    ll N;
+    vector<ll> A(5);
+    cin >> N;
+    REP(i, 5) cin >> A.at(i);
+    ll res = (N + A.at(0)-1)/A.at(0);;
+    ll pre = res;
+    FOR(i, 1, 4){
+        ll r = (N + A.at(i)-1)/A.at(i);
+        if(pre >= r) res++;
+        else res = res + r - pre;
+        pre = r;
+    }
 
-    //cout << << endl;
+    cout << res << endl;
 
     return 0;
 }
