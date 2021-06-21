@@ -13,7 +13,7 @@ int main() {
     vector<pair<string, int>> v; //vectorをpairで初期化
     v.push_back({"apple", 4});  //vectorの末尾にapple,4のキーを入れる
     v.push_back({"banana", 3});  //vectorの末尾にapple,4のキーを入れる
-
+    
     //ソートの挙動
     //-一つ目を昇順にソートする。
     //-一つ目が同一の場合はさらに二つ目を昇順にソートする。
